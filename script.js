@@ -2,9 +2,9 @@
 var textContainer = document.getElementById('evaluatedText')
 var display = document.getElementById('wordCount') 
 
-var words = textContainer.value.split(' ').length;
+// var words = textContainer.value.split(" ");
 // display.innerHTML = 'words'
 textContainer.addEventListener('input' , countWords);
 function countWords(){
-    display.innerHTML = 'words';
+    display.innerHTML = textContainer.value.split(" ").length;
 }
